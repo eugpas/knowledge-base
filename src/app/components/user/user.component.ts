@@ -7,7 +7,7 @@ import 'rxjs/add/operator/switchMap';
 @Component({
   selector: 'app-user',
   template: `
-    <h1>{{title}}</h1>
+    <h1 *ngIf="user">{{user.nickname}}</h1>
     <md-card *ngIf="user">User rating: {{user.global_rating}}</md-card>
   `
 })
@@ -15,7 +15,6 @@ import 'rxjs/add/operator/switchMap';
 export class UserComponent implements OnInit {
   private userId: number;
   public user: object;
-  title = 'User component';
 
   constructor(
     private userService: UserService,

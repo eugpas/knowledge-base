@@ -2,8 +2,8 @@
   {{ title }}
 </h1>
 <input placeholder="User name" [(ngModel)]="userId">
-<button (click)="getUserList()">Click me!</button>
+<button (click)="getUserList()">Show rating!</button>
 <div *ngIf="users">
-  <div *ngFor="let user of users" (click)="gotoUserDetails(user)">{{ user.nickname }}</div>
+  <div class="list-item" *ngFor="let user of users" (click)="gotoUserDetails(user)">{{ user.nickname }}</div>
 </div>
 <router-outlet></router-outlet>

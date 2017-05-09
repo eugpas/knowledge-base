@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdInputModule, MdCheckboxModule } from '@angular/material';
+import { MdButtonModule, MdCardModule, MdCheckboxModule } from '@angular/material';
 
 
 @NgModule({
@@ -8,10 +8,10 @@ import { MdButtonModule, MdInputModule, MdCheckboxModule } from '@angular/materi
   imports: [
     BrowserAnimationsModule,
     MdButtonModule,
-    MdInputModule,
+    MdCardModule,
     MdCheckboxModule
   ],
   providers: [],
   bootstrap: []
 })
-export class MaterialModule { }
+export class MaterialImportsModule { }

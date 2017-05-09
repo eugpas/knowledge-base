@@ -1,0 +1,7 @@
+.list-item {
+  margin: 5px;
+  color: #1e90ff;
+}
+.list-item:hover {
+  cursor: pointer;
+}

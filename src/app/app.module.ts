@@ -2,10 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import 'rxjs/add/operator/toPromise';
 
-import { MaterialModule } from './modules/material.module';
+import { MaterialImportsModule } from './modules/material-imports.module';
 import { AppRoutingModule } from './modules/app-routing.module';
 
 import { AppComponent } from './components/app.component';
@@ -25,6 +26,7 @@ import { UserService } from './services/user.service';
     FormsModule,
     HttpModule,
     MaterialModule,
+    MaterialImportsModule,
     AppRoutingModule
   ],
   providers: [UserService],
